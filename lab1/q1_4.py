@@ -9,9 +9,3 @@ def init(l):
 
 def last(l):
     return l[len(l)-1]
-
-l = [1, 2, 3, 4, 5]
-print(head(l))
-print(tail(l))
-print(init(l))
-print(last(l))

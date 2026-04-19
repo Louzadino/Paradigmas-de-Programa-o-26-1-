@@ -15,7 +15,7 @@ def greater_nums_list(num, list1, list2):
 if __name__ == "__main__":
     # lista original
     l1 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-    # lista de números maiores
+    # lista auxiliar
     l2 = list()
 
     num = int(input("Digite um número da lista: "))

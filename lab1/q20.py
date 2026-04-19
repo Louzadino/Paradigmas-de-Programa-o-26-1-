@@ -14,7 +14,8 @@ def strip(l1, l2, listAux):
     else:
         return listAux
 
-l1 = [1, 2, 3, 4]
-l2 = [2, 4, 6, 8]
-listAux = list()
-print(strip(l1, l2, listAux))
+if __name__ == "__main__":
+    l1 = [1, 2, 3, 4]
+    l2 = [2, 4, 6, 8]
+    listAux = list()
+    print(strip(l1, l2, listAux))

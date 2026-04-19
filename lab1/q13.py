@@ -9,9 +9,10 @@ def conc_lists(l1, l2, l3):
         return conc_lists(l1, tail(l2), l3)
     else:
         return l3
-    
-l1 = [1, 2, 3]
-l2 = [3, 4, 5]
-l3 = list()
-l4 = conc_lists(l1, l2, l3)
-print(l4)
+
+if __name__ == "__main__":
+    l1 = [1, 2, 3]
+    l2 = [3, 4, 5]
+    l3 = list()
+    l4 = conc_lists(l1, l2, l3)
+    print(l4)

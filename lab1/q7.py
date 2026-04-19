@@ -10,6 +10,6 @@ def soma_fato(n):
     else:
         return (1 / fato(n)) + soma_fato(n-1)
     
-
-n = int(input())
-print(soma_fato(n))
+if __name__ == "__main__":
+    n = int(input())
+    print(soma_fato(n))

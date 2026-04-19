@@ -6,5 +6,6 @@ def sum_negs(n):
     else:
         return sum_negs(int(input(("Digite um valor N. N < 0 será somado. 0 encerra a leitura: "))))
 
-n = sum_negs(int(input("Digite um valor N. N < 0 será somado. 0 encerra a leitura: ")))
-print(n)
+if __name__ == "__main__":
+    n = sum_negs(int(input("Digite um valor N. N < 0 será somado. 0 encerra a leitura: ")))
+    print(n)

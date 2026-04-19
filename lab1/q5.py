@@ -6,6 +6,7 @@ def fibo(n):
     else:
         return (fibo(n-1) + fibo(n-2))
 
-n = int(input("Digite N para receber seu fibonacci"))
-resultado = fibo(n)
-print(resultado)
+if __name__ == "__main__":
+    n = int(input("Digite N para receber seu fibonacci"))
+    resultado = fibo(n)
+    print(resultado)

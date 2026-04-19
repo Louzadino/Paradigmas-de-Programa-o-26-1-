@@ -4,6 +4,7 @@ def fato(n):
     else:
         return n * fato(n-1)
 
-n = int(input("Digite um N para receber seu fatorial: "))
-resultado = fato(n)
-print(resultado)
+if __name__ == "__main__":
+    n = int(input("Digite um N para receber seu fatorial: "))
+    resultado = fato(n)
+    print(resultado)

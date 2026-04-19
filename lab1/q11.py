@@ -1,17 +1,17 @@
-def ehPrimoAux(n, i):
+def prime_aux(n, i):
     if n == i:
         return True
     elif n % i == 0:
         return False
     else:
-        return ehPrimoAux(n, i+1)
+        return prime_aux(n, i+1)
 
-def ehPrimo(n):
-    return ehPrimoAux(n, 2)
+def prime(n):
+    return prime_aux(n, 2)
 
 if __name__ == "__main__":
     n = int(input("Digite um número: "))
-    if ehPrimo(n):
+    if prime(n):
         print("É primo")
     else:
         print("Não é primo")

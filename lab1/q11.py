@@ -9,8 +9,9 @@ def ehPrimoAux(n, i):
 def ehPrimo(n):
     return ehPrimoAux(n, 2)
 
-n = int(input("Digite um número: "))
-if ehPrimo(n):
-    print("É primo")
-else:
-    print("Não é primo")
+if __name__ == "__main__":
+    n = int(input("Digite um número: "))
+    if ehPrimo(n):
+        print("É primo")
+    else:
+        print("Não é primo")

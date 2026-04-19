@@ -1,14 +1,15 @@
 from q11 import ehPrimo
 
-def nums_primos(N, cont, i):
+def prime_nums(N, cont, i):
     if cont == N:
         return
     else:
         if ehPrimo(i):
             print(i)
-            return nums_primos(N, cont+1, i+1)
+            return prime_nums(N, cont+1, i+1)
         else:
-            return nums_primos(N, cont, i+1)
-        
-N = int(input("N primeiros numeros primos: "))
-nums_primos(N, 0, 2)
+            return prime_nums(N, cont, i+1)
+
+if __name__ == "__main__":
+    N = int(input("N primeiros numeros primos: "))
+    prime_nums(N, 0, 2)
